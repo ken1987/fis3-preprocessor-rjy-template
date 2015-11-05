@@ -1,6 +1,6 @@
 {
   "name": "fis3-preprocessor-rjy-template",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Html template compiler tool",
   "main": "index.js",
   "keywords": [
