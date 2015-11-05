@@ -19,8 +19,11 @@ fis.match('**.html', {
 
 ##模板页中
 
-**`tmpl-id`表示引入json配置文件后此模版解析时用到数据的字段名**
+**`tmpl-id`表示解析模版时对应的配置中的数据的字段名**
+**`tmpl-config`表示配置文件路径，可以是相对路径或者绝对路径**
 
 ```html
-<link rel="import" href="/path/template.tpl?__inline" tmpl-id='tmpl'>
+<!--tmpl-config="/path/config.json"-->
+<link rel="import" href="/path/template1.tpl?__inline" tmpl-id='t1'>
+<link rel="import" href="/path/template2.tpl?__inline" tmpl-id='t2'>
 ```
