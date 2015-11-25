@@ -24,14 +24,15 @@ fis.match('**.html', {
 ##模板页中
 
 `tmpl-data`可以通过以下方式传递数据：
-1. 可以作为简单的状态值使用
-2. 当数据较为复杂是，可以通过`url(path/to/your.json)`的方式引用json格式的文件，支持相对路径和绝对路径
+1. 可以作为简单的状态值使用`text=string`
+2. 当数据较为复杂是，可以通过`url=path/to/your.json`的方式引用json格式的文件，支持相对路径和绝对路径
+3. 选择复杂数据的某个属性以`.`分割父子属性
 
 ```html
 <!-- 简单状态 -->
-<link rel="import" href="bd.tpl?__inline" tmpl-data="succuss">
+<link rel="import" href="a.tpl?__inline" tmpl-data="text=a">
 <!-- 复杂数据结构 -->
-<link rel="import" href="bd.tpl?__inline" tmpl-data="url(path/to/your.json)">
+<link rel="import" href="b.tpl?__inline" tmpl-data="url=path/to/your.json&id=b.info">
 ```
 
 ##配置
